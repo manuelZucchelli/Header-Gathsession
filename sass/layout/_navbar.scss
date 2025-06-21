@@ -1,0 +1,33 @@
+nav{
+    display: flex;
+    height: 120px;
+    align-items: center;
+    img{
+        width: 235px;
+    }
+    ul{
+        display: flex;
+        margin-left: 742px;
+        gap: 48px;
+        a{
+            font-family: 'Poppins';
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            color: $gris;
+            position: relative;
+            &:hover{
+                color: black;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    width: 59%;
+                    height: 4px;
+                    background-color: #DB2A6B;
+                    bottom: -8px;
+                }
+            }
+        }
+    }
+}
